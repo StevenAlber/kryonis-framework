@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRYONIS Framework Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 400px;
+        }
+        .flow-step {
+            flex-basis: 200px;
+            flex-grow: 1;
+        }
+        .flow-arrow {
+            font-size: 2.5rem;
+            line-height: 1;
+            color: #00D0B0;
+        }
+        .pyramid-level-1 {
+            width: 8rem;
+            height: 2.5rem;
+            background-color: #002E66;
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        }
+        .pyramid-level-2 {
+            width: 16rem;
+            height: 2.5rem;
+            background-color: #0094FF;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+            margin-top: -1px;
+        }
+        .pyramid-level-3 {
+            width: 24rem;
+            height: 2.5rem;
+            background-color: #00D0B0;
+            clip-path: polygon(16.66% 0%, 83.33% 0%, 100% 100%, 0% 100%);
+            margin-top: -1px;
+        }
+        .network-node {
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #0094FF;
+            border: 2px solid #002E66;
+        }
+    </style>
+</head>
+<body class="bg-[#0D1117] text-gray-200">
+
+    <div class="max-w-7xl mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-10 md:mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#0094FF] mb-4">The KRYONIS Framework</h1>
+            <p class="text-xl md:text-2xl text-[#00D0B0]">An Infographic on the Proof-of-Coherence Economy</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+
+            <section class="md:col-span-2 bg-gray-900 rounded-lg shadow-xl p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#0094FF] mb-4">Phase 1: Genesis & Rationale - The 'Why'</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    Our current economic models are built on extraction and scarcity, leading to a disconnect between measured growth and human well-being. The KRYONIS Framework proposes a fundamental shift: an economy based on coherence, the measurable, synergistic alignment of systems, moving humanity from extraction to regeneration.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border-l-8 border-red-500 bg-red-900/30 rounded-r-lg p-6 shadow-md">
+                        <h3 class="text-2xl font-semibold text-red-400 mb-3">Extractive Economy (Entropy)</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li>Based on Scarcity & Competition</li>
+                            <li>Rewards Extraction & Consumption</li>
+                            <li>Metrics (GDP) ignore well-being</li>
+                            <li>Generates Disorder (Entropy)</li>
+                            <li>Fundamentally Fragmented</li>
+                        </ul>
+                    </div>
+                    <div class="border-l-8 border-[#00D0B0] bg-[#00D0B0]/10 rounded-r-lg p-6 shadow-md">
+                        <h3 class="text-2xl font-semibold text-[#00D0B0] mb-3">Coherence Economy (Synergy)</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li>Based on Synergy & Regeneration</li>
+                            <li>Rewards Value & Order Creation</li>
+                            <li>Metrics (KCI) measure well-being</li>
+                            <li>Generates Order (Coherence)</li>
+                            <li>Inherently Systemic & Aligned</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:col-span-2 bg-gray-900 rounded-lg shadow-xl p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#0094FF] mb-4">Phase 2: The Physics of Coherence - The 'What'</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    Coherence is not a metaphor; it is a measurable, physical property of order and synergy found in all living systems. The KRYONIS Coherence Index (KCI) is a new metric designed to quantify this systemic health, drawing from diverse, real-time data sources via a decentralized oracle network.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-200 mb-4 text-center">The Spectrum of Coherence</h3>
+                        <p class="text-gray-300 mb-4">The KCI measures a system's position on the spectrum from fragmented disorder (high entropy) to synergistic, life-affirming order (high coherence).</p>
+                        <div class="w-full mt-2">
+                            <div class="h-10 w-full rounded-full bg-gradient-to-r from-red-500 via-yellow-400 to-[#0094FF] shadow-inner"></div>
+                            <div class="flex justify-between text-sm font-bold mt-2 px-1">
+                                <span class="text-red-400">High Entropy (Disorder)</span>
+                                <span class="text-[#0094FF]">High Coherence (Synergy)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-200 mb-4 text-center">KCI Oracle Network: Data Inputs</h3>
+                        <p class="text-gray-300 mb-4">The KCI is calculated from multiple data categories, providing a holistic view of systemic health.</p>
+                        <div class="chart-container" style="height: 350px; max-height: 350px;">
+                            <canvas id="kciSourcesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:col-span-2 bg-gray-900 rounded-lg shadow-xl p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#0094FF] mb-4">Phase 3: Economic Architecture - The 'How' (Economy)</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    The framework translates the physical measurement of coherence (KCI) into economic value. The KRYON (KYN) is a new form of currency emitted *only* as a direct reward for the creation of measurable coherence. This creates a generative, non-inflationary economy where value is tied to systemic well-being.
+                </p>
+
+                <h3 class="text-2xl font-semibold text-gray-200 mb-4 text-center">The Coherence-to-Currency Engine</h3>
+                <p class="text-gray-300 mb-6 text-center">This automated process forms the economic heart of the framework, ensuring all value is backed by proven coherence.</p>
+                <div class="flex flex-col md:flex-row justify-around items-center mt-4 space-y-4 md:space-y-0 md:space-x-2">
+                    <div class="flow-step text-center p-4 bg-[#0094FF]/20 rounded-lg shadow-md">
+                        <span class="text-5xl" role="img" aria-label="microscope">🔬</span>
+                        <h4 class="text-xl font-semibold text-[#0094FF] mt-2">KCI Data Capture</h4>
+                        <p class="text-sm text-gray-400">Real-world data (biometric, ecological, social) is collected.</p>
+                    </div>
+                    <div class="flow-arrow transform rotate-90 md:rotate-0">→</div>
+                    <div class="flow-step text-center p-4 bg-[#0094FF]/20 rounded-lg shadow-md">
+                        <span class="text-5xl" role="img" aria-label="satellite antenna">📡</span>
+                        <h4 class="text-xl font-semibold text-[#0094FF] mt-2">Oracle Network</h4>
+                        <p class="text-sm text-gray-400">Decentralized oracles feed data securely to the network.</p>
+                    </div>
+                    <div class="flow-arrow transform rotate-90 md:rotate-0">→</div>
+                    <div class="flow-step text-center p-4 bg-[#0094FF]/20 rounded-lg shadow-md">
+                        <span class="text-5xl" role="img" aria-label="check mark">✅</span>
+                        <h4 class="text-xl font-semibold text-[#0094FF] mt-2">KCI Validation</h4>
+                        <p class="text-sm text-gray-400">The network validates a positive change in coherence.</p>
+                    </div>
+                    <div class="flow-arrow transform rotate-90 md:rotate-0">→</div>
+                    <div class="flow-step text-center p-4 bg-[#0094FF]/20 rounded-lg shadow-md">
+                        <span class="text-5xl" role="img" aria-label="coin">🪙</span>
+                        <h4 class="text-xl font-semibold text-[#0094FF] mt-2">KRYON Emission</h4>
+                        <p class="text-sm text-gray-400">Currency (KYN) is emitted in direct proportion to the coherence created.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-gray-200 mt-12 mb-4 text-center">Generative, Non-Inflationary Currency</h3>
+                <p class="text-gray-300 mb-6 text-center">The currency supply (KRYON) expands only when real, measurable value (KCI) is created, intrinsically linking monetary supply to systemic health and preventing speculative inflation.</p>
+                <div class="chart-container" style="height: 400px; max-height: 400px;">
+                    <canvas id="kciKryonChart"></canvas>
+                </div>
+            </section>
+
+            <section class="md:col-span-1 bg-gray-900 rounded-lg shadow-xl p-6 md:p-8 flex flex-col">
+                <h2 class="text-3xl font-bold text-[#0094FF] mb-4">Phase 4: Governance</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    A system this complex cannot be "ruled" by a central authority. It must be self-governing. The Distributed Resonance Governance Model (DRGM) is an adaptive, multi-stakeholder system designed to act as the network's "nervous system," sensing and responding to maintain systemic coherence.
+                </p>
+
+                <h3 class="text-2xl font-semibold text-gray-200 mb-4 text-center">Governance Model Comparison</h3>
+                <div class="flex-grow grid grid-cols-2 gap-4 items-center justify-around mt-4">
+                    <div class="text-center">
+                        <h4 class="text-xl font-semibold text-gray-400 mb-4">Traditional (Top-Down)</h4>
+                        <div class="flex flex-col items-center opacity-70">
+                            <div class="w-16 h-8 bg-gray-600" style="clip-path: polygon(50% 0%, 100% 100%, 0% 100%);"></div>
+                            <div class="w-32 h-8 bg-gray-500" style="clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%); margin-top: -1px;"></div>
+                            <div class="w-48 h-8 bg-gray-400" style="clip-path: polygon(16.66% 0%, 83.33% 0%, 100% 100%, 0% 100%); margin-top: -1px;"></div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">Brittle, Slow, Centralized</p>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-semibold text-[#00D0B0] mb-4">DRGM (Distributed)</h4>
+                        <div class="grid grid-cols-3 gap-2 p-4 max-w-[200px] mx-auto">
+                            <div class="network-node rounded-full"></div>
+                            <div class="network-node rounded-full opacity-80"></div>
+                            <div class="network-node rounded-full"></div>
+                            <div class="network-node rounded-full opacity-80"></div>
+                            <div class="network-node rounded-full"></div>
+                            <div class="network-node rounded-full opacity-80"></div>
+                        </div>
+                        <p class="text-sm text-[#00D0B0] font-medium mt-4">Resilient, Adaptive, Aligned</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-gray-200 mt-10 mb-4 text-center">DRGM Stakeholder Balance</h3>
+                <p class="text-gray-300 mb-6 text-center">Governance power is balanced between key network participants, ensuring no single group can dominate.</p>
+                <div class="chart-container" style="height: 350px; max-height: 350px; margin-top: auto;">
+                    <canvas id="drgmChart"></canvas>
+                </div>
+            </section>
+
+            <section class="md:col-span-1 bg-gray-900 rounded-lg shadow-xl p-6 md:p-8 flex flex-col">
+                <h2 class="text-3xl font-bold text-[#0094FF] mb-4">Phase 5: Road to Implementation</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    The framework is deployed through a methodical, multi-year strategy, moving from controlled lab experiments to real-world pilot programs before scaling to a global network. This ensures stability, security, and progressive validation at every stage.
+                </p>
+                
+                <h3 class="text-2xl font-semibold text-gray-200 mb-6 text-center">Phased Implementation Roadmap</h3>
+                
+                <div class="relative mt-4 pl-8 border-l-4 border-[#0094FF]">
+                    <div class="mb-8 relative">
+                        <div class="absolute w-6 h-6 bg-[#0094FF] rounded-full -left-[1.9rem] top-0 border-4 border-gray-900 shadow"></div>
+                        <h4 class="text-xl font-bold text-gray-200">Phase A: Lab Validation</h4>
+                        <p class="text-gray-400 mt-1">Scientific validation of KCI measurement protocols in controlled laboratory settings. First lines of code written for the core protocol.</p>
+                    </div>
+                    
+                    <div class="mb-8 relative">
+                        <div class="absolute w-6 h-6 bg-[#0094FF] rounded-full -left-[1.9rem] top-0 border-4 border-gray-900 shadow"></div>
+                        <h4 class="text-xl font-bold text-gray-200">Phase B: Pilot Programs</h4>
+                        <p class="text-gray-400 mt-1">Deployment in contained, real-world pilots (e.g., regenerative agriculture, wellness communities) to test the economic and governance models.</p>
+                    </div>
+                    
+                    <div class="mb-8 relative">
+                        <div class="absolute w-6 h-6 bg-[#0094FF] rounded-full -left-[1.9rem] top-0 border-4 border-gray-900 shadow"></div>
+                        <h4 class="text-xl font-bold text-gray-200">Phase C: Network Launch</h4>
+                        <p class="text-gray-400 mt-1">Public launch of the decentralized network. KRYON emission is activated, and the DRGM takes full effect. Open call for developers and partners.</p>
+                    </div>
+                    
+                    <div class="relative">
+                        <div class="absolute w-6 h-6 bg-[#0094FF] rounded-full -left-[1.9rem] top-0 border-4 border-gray-900 shadow"></div>
+                        <h4 class="text-xl font-bold text-gray-200">Phase D: Global Scaling</h4>
+                        <p class="text-gray-400 mt-1">Integration with global economic systems, scaling the oracle network, and fostering a worldwide community of participants in the coherence economy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:col-span-2 bg-gray-900 rounded-lg shadow-xl p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#0094FF] mb-4">Phase 6: The Global Release - The 'Now'</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    The theoretical work is complete. The KRYONIS Framework is now a global, open-source public good. The next phase is not to build *for* a community, but to build *with* one. We are actively engaging researchers, developers, institutions, and partners to co-create this new economic paradigm.
+                </p>
+                <h3 class="text-2xl font-semibold text-gray-200 mb-4 text-center">Initial Community Engagement Targets</h3>
+                <p class="text-gray-300 mb-6 text-center">The success of the release will be measured by the quality of engagement and the growth of the co-creative community.</p>
+                <div class="chart-container" style="height: 400px; max-height: 400px;">
+                    <canvas id="engagementChart"></canvas>
+                </div>
+            </section>
+        </main>
+
+        <footer class="md:col-span-2 text-center text-gray-500 text-sm mt-12">
+            <p>KRYONIS Framework Infographic | Proof-of-Coherence Economy</p>
+            <p class="mt-1">Data synthesized from KRYONIS Sovereign Systems Limited documentation (5 November 2025).</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            const palette = {
+                primary: '#0094FF',    // Coherence Cyan
+                dark: '#002E66',      // Deep Resonant Blue
+                mid: '#00D0B0',       // Aurora Teal
+                light: '#7A6FFF',     // Neural Violet
+                accent: '#FFC247',    // Quantum Gold
+                background: '#0D1117' // Obsidian Black
+            };
+
+            const chartFontColor = '#E5E7EB';
+            Chart.defaults.color = chartFontColor;
+            Chart.defaults.borderColor = '#4B5563';
+
+            function wrapLabels(label, maxWidth = 16) {
+                if (typeof label !== 'string' || label.length <= maxWidth) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + word).length > maxWidth) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                }
+                lines.push(currentLine.trim());
+                return lines;
+            }
+
+            const multilineTooltipTitle = {
+                callbacks: {
+                    title: function(tooltipItems) {
+                        const item = tooltipItems[0];
+                        let label = item.chart.data.labels[item.dataIndex];
+                        if (Array.isArray(label)) {
+                            return label.join(' ');
+                        } else {
+                            return label;
+                        }
+                    }
+                }
+            };
+
+            const kciSourcesCtx = document.getElementById('kciSourcesChart')?.getContext('2d');
+            if (kciSourcesCtx) {
+                new Chart(kciSourcesCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Biometric Data', 'Ecological Data', 'Economic Data', 'Social Sentiment'],
+                        datasets: [{
+                            label: 'KCI Data Input',
+                            data: [35, 30, 20, 15],
+                            backgroundColor: [
+                                palette.primary,
+                                palette.mid,
+                                palette.light,
+                                palette.accent
+                            ],
+                            borderColor: '#1f2937',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            tooltip: multilineTooltipTitle,
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    color: chartFontColor,
+                                    padding: 15,
+                                    font: { size: 14 }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const kciKryonCtx = document.getElementById('kciKryonChart')?.getContext('2d');
+            if (kciKryonCtx) {
+                new Chart(kciKryonCtx, {
+                    data: {
+                        labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5', 'Year 6'],
+                        datasets: [{
+                            type: 'bar',
+                            label: 'KCI Growth (Index)',
+                            data: [100, 120, 180, 250, 400, 600],
+                            backgroundColor: palette.accent + 'aa',
+                            borderColor: palette.accent,
+                            borderWidth: 1,
+                            yAxisID: 'yKci'
+                        }, {
+                            type: 'line',
+                            label: 'KRYON Emission (Units)',
+                            data: [100, 120, 180, 250, 400, 600],
+                            borderColor: palette.dark,
+                            backgroundColor: palette.dark + '33',
+                            fill: true,
+                            tension: 0.1,
+                            yAxisID: 'yKryon'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            tooltip: multilineTooltipTitle,
+                            legend: {
+                                position: 'top',
+                                labels: { color: chartFontColor, font: { size: 14 } }
+                            }
+                        },
+                        scales: {
+                            x: { 
+                                grid: { display: false },
+                                ticks: { color: chartFontColor }
+                            },
+                            yKci: {
+                                type: 'linear',
+                                display: true,
+                                position: 'left',
+                                title: { display: true, text: 'KCI Growth (Index)', color: chartFontColor },
+                                grid: { drawOnChartArea: false },
+                                ticks: { color: chartFontColor }
+                            },
+                            yKryon: {
+                                type: 'linear',
+                                display: true,
+                                position: 'right',
+                                title: { display: true, text: 'KRYON Emission (Units)', color: chartFontColor },
+                                grid: { display: false },
+                                ticks: { color: chartFontColor }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const drgmCtx = document.getElementById('drgmChart')?.getContext('2d');
+            if (drgmCtx) {
+                new Chart(drgmCtx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['Protocol Dev', 'Validation', 'Community Vote', 'Dispute Resolution', 'Treasury Mgmt'],
+                        datasets: [
+                            {
+                                label: 'Validators',
+                                data: [6, 9, 4, 8, 5],
+                                backgroundColor: palette.primary + '40',
+                                borderColor: palette.primary,
+                                pointBackgroundColor: palette.primary,
+                                borderWidth: 2
+                            },
+                            {
+                                label: 'Developers',
+                                data: [9, 3, 6, 4, 7],
+                                backgroundColor: palette.dark + '40',
+                                borderColor: palette.dark,
+                                pointBackgroundColor: palette.dark,
+                                borderWidth: 2
+                            },
+                            {
+                                label: 'Community (KYN Holders)',
+                                data: [4, 7, 9, 5, 8],
+                                backgroundColor: palette.light + '40',
+                                borderColor: palette.light,
+                                pointBackgroundColor: palette.light,
+                                borderWidth: 2
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            tooltip: multilineTooltipTitle,
+                            legend: {
+                                position: 'bottom',
+                                labels: { color: chartFontColor, font: { size: 14 } }
+                            }
+                        },
+                        scales: {
+                            r: {
+                                pointLabels: { font: { size: 13 }, color: chartFontColor },
+                                suggestedMin: 0,
+                                suggestedMax: 10,
+                                grid: { color: '#4B5563' },
+                                angleLines: { color: '#4B5563' },
+                                ticks: { backdropColor: 'transparent', color: chartFontColor }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const engagementCtx = document.getElementById('engagementChart')?.getContext('2d');
+            if (engagementCtx) {
+                new Chart(engagementCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: [
+                            'Academic Peer Reviews',
+                            'Developer Grants Funded',
+                            wrapLabels('Pilot Program Applications'),
+                            'Institutional Partners'
+                        ],
+                        datasets: [{
+                            label: 'Year 1 Targets',
+                            data: [150, 50, 100, 25],
+                            backgroundColor: [
+                                palette.primary,
+                                palette.mid,
+                                palette.light,
+                                palette.accent
+                            ],
+                            borderColor: '#1f2937',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            tooltip: multilineTooltipTitle,
+                            legend: { display: false }
+                        },
+                        scales: {
+                            x: {
+                                title: { display: true, text: 'Target Count', color: chartFontColor },
+                                grid: { display: true, drawOnChartArea: false, color: '#4B5563' },
+                                ticks: { color: chartFontColor }
+                            },
+                            y: {
+                                grid: { display: false },
+                                ticks: { color: chartFontColor }
+                            }
+                        }
+                    }
+                });
+            }
+
+        });
+    </script>
+</body>
+</html>
+
